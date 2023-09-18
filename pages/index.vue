@@ -101,8 +101,9 @@
 			management a breeze.
 		</p>
 	</section>
+	<!-- flex flex-col w-full lg:w-[75%] self-center gap-10 sm:gap-4 justify-around items-center my-20 sm:flex-row bg-purple-100 xs:mx-6 xs:rounded-lg pb-5 sm:pb-0 -->
 	<section
-		class="flex flex-col gap-10 sm:gap-4 justify-around items-center my-10 sm:flex-row bg-gray-100 xs:mx-6 xs:rounded-lg p-5"
+		class="flex flex-col w-full lg:w-[85%] self-center gap-10 sm:gap-4 justify-around items-center my-20 sm:flex-row bg-gray-100 xs:mx-6 xs:rounded-lg p-5 lg:p-12"
 	>
 		<img
 			class="w-[90%] sm:w-[50%] rounded-lg shadow-lg"
