@@ -1,0 +1,20 @@
+{
+	"name": "crobata-home",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"devDependencies": {
+		"@nuxt/devtools": "latest",
+		"@nuxtjs/tailwindcss": "^6.8.0",
+		"nuxt": "^3.7.2"
+	},
+	"dependencies": {
+		"@heroicons/vue": "^2.0.18",
+		"primevue": "^3.34.1"
+	}
+}
