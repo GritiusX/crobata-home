@@ -17,9 +17,12 @@
 			</NuxtLink>
 			<div class="hidden lg:flex flex-row w-full justify-between gap-4 mt-1">
 				<div class="flex flex-row items-center gap-5">
-					<span class="flex gap-2 items-center hover:text-pinky"
-						>Platform <ChevronRightIcon class="w-3 h-3 mt-1"
-					/></span>
+					<nuxt-link
+						to="/platform"
+						class="flex gap-2 items-center hover:text-pinky"
+					>
+						Platform <ChevronRightIcon class="w-3 h-3 mt-1" />
+					</nuxt-link>
 					<span class="flex gap-2 items-center hover:text-bluey"
 						>Solutions <ChevronRightIcon class="w-3 h-3 mt-1"
 					/></span>

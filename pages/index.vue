@@ -80,7 +80,7 @@
 				Connect your experimentation platform and let the Crobata do the work.
 				Share access and allow your company to feed from your knowledge
 			</p>
-			<p class="flex gap-2 items-center text-xs lg:text-xm text-blue-800">
+			<p class="flex gap-2 items-center text-xs lg:text-sm text-blue-800">
 				View all integrations <ArrowLongRightIcon class="h-4 w-4 mt-1" />
 			</p>
 		</div>
@@ -101,7 +101,6 @@
 			management a breeze.
 		</p>
 	</section>
-	<!-- flex flex-col w-full lg:w-[75%] self-center gap-10 sm:gap-4 justify-around items-center my-20 sm:flex-row bg-purple-100 xs:mx-6 xs:rounded-lg pb-5 sm:pb-0 -->
 	<section
 		class="flex flex-col w-full lg:w-[85%] self-center gap-10 sm:gap-4 justify-around items-center my-20 sm:flex-row bg-gray-100 xs:mx-6 xs:rounded-lg p-5 lg:p-12"
 	>
@@ -126,7 +125,6 @@
 			</div>
 		</div>
 	</section>
-	<footer class="bg-blue-500 w-full h-[60px]">hola soy el footer</footer>
 </template>
 
 <script setup>
