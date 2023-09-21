@@ -90,7 +90,7 @@
 	</section>
 
 	<div class="self-center w-full mlg:w-[80%] mxl:w-[68%] p-4">
-		<Accordion multiple="true" :activeIndex="[0]">
+		<Accordion :multiple="true" :activeIndex="[0]">
 			<AccordionTab
 				headerClass="gap-5 bg-gray-200 border border-white rounded-t-lg p-4"
 				contentClass="bg-gray-50 p-4"
