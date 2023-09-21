@@ -203,7 +203,7 @@
 		<div
 			class="flex flex-col md:flex-row w-full lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto items-center justify-center gap-8"
 		>
-			<div class="text-center md:text-left">
+			<div class="text-center md:text-left lg:w-[80%] xl:w-[75%]">
 				<h2
 					class="text-xl mdb:text-2xl mxl:text-3xl font-medium text-center sm:items-start sm:text-start"
 				>
