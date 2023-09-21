@@ -89,10 +89,14 @@
 		</div>
 	</section>
 
-	<div class="card">
-		<Accordion :multiple="true" :activeIndex="[0]">
-			<AccordionTab header="Header I">
-				<p>
+	<div class="self-center w-full mlg:w-[80%] mxl:w-[68%] p-4">
+		<Accordion multiple="true" :activeIndex="[0]">
+			<AccordionTab
+				headerClass="gap-5 bg-gray-200 border border-white rounded-t-lg p-4"
+				contentClass="bg-gray-50 p-4"
+				header="What problem does CROBATA solve?"
+			>
+				<p class="">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
 					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -102,7 +106,11 @@
 					culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 			</AccordionTab>
-			<AccordionTab header="Header II">
+			<AccordionTab
+				headerClass="bg-gray-200 border border-white p-4"
+				contentClass="bg-gray-50 p-4"
+				header="Is CROBATA suitable for both beginners and experts in A/B testing?"
+			>
 				<p>
 					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -113,7 +121,71 @@
 					sed quia non numquam eius modi.
 				</p>
 			</AccordionTab>
-			<AccordionTab header="Header III">
+			<AccordionTab
+				headerClass="bg-gray-200 border border-white p-4"
+				contentClass="bg-gray-50 p-4"
+				header="Can multiple team members collaborate on CROBATA?"
+			>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+					ab illo inventore veritatis et quasi architecto beatae vitae dicta
+					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+					qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit,
+					sed quia non numquam eius modi.
+				</p>
+			</AccordionTab>
+			<AccordionTab
+				headerClass="bg-gray-200 border border-white p-4"
+				contentClass="bg-gray-50 p-4"
+				header="Why use CROBATA instead of my classic spreadsheets?"
+			>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+					ab illo inventore veritatis et quasi architecto beatae vitae dicta
+					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+					qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit,
+					sed quia non numquam eius modi.
+				</p>
+			</AccordionTab>
+			<AccordionTab
+				headerClass="bg-gray-200 border border-white p-4"
+				contentClass="bg-gray-50 p-4"
+				header="How does CROBATA integrate with A/B testing tools?"
+			>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+					ab illo inventore veritatis et quasi architecto beatae vitae dicta
+					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+					qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit,
+					sed quia non numquam eius modi.
+				</p>
+			</AccordionTab>
+			<AccordionTab
+				headerClass="bg-gray-200 border border-white p-4"
+				contentClass="bg-gray-50 p-4"
+				header="How do I start using CROBATA?"
+			>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+					ab illo inventore veritatis et quasi architecto beatae vitae dicta
+					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+					qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit,
+					sed quia non numquam eius modi.
+				</p>
+			</AccordionTab>
+			<AccordionTab
+				headerClass="bg-gray-200 border border-white rounded-b-lg p-4"
+				contentClass="bg-gray-50 p-4"
+				header="What is the price?"
+			>
 				<p>
 					At vero eos et accusamus et iusto odio dignissimos ducimus qui
 					blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
@@ -126,6 +198,38 @@
 			</AccordionTab>
 		</Accordion>
 	</div>
+
+	<section class="py-10 my-10 px-4 bg-blue-200">
+		<div
+			class="flex flex-col md:flex-row w-full lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto items-center justify-center gap-8"
+		>
+			<div class="text-center md:text-left">
+				<h2
+					class="text-xl mdb:text-2xl mxl:text-3xl font-medium text-center sm:items-start sm:text-start"
+				>
+					Every day more and more teams decide to stop saying they are
+					data-driven and start taking real action by joining our community. Be
+					part of it
+				</h2>
+			</div>
+
+			<div class="text-center md:text-left">
+				<div
+					class="flex flex-col xs:flex-row md:flex-col gap-3 mdb:flex-col xl:px-16"
+				>
+					<Button
+						class="bg-bluey text-white px-4 py-2 rounded-md xl:text-xl whitespace-nowrap"
+						label="Sign up for free"
+					/>
+					<Button
+						class="border-2 bg-white/30 border-gray-400 text-gray-600 px-4 py-2 rounded-md xl:text-xl whitespace-nowrap"
+						label="Contact Sales"
+						size="small"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
 </template>
 
 <script setup>
@@ -136,3 +240,9 @@ definePageMeta({
 	layout: "default",
 });
 </script>
+
+<style>
+.redbackground {
+	background-color: red !important;
+}
+</style>
