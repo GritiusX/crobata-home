@@ -8,7 +8,7 @@
 			class="flex flex-col w-full gap-5 p-6 lg:p-8 xl:gap-7 mdb:w-[50%] md:items-center mdb:justify-center mdb:text-start mdb:items-start text-center font-semibold"
 		>
 			<h1
-				class="text-5xl lg:text-7xl xl:px-16 xl:w-[90%] leading-snug text-bluey"
+				class="text-5xl lg:text-7xl xl:pl-16 xl:w-[90%] leading-snug text-bluey"
 			>
 				Unlock the power of your A/B Tests
 			</h1>
@@ -16,14 +16,14 @@
 				Streamline, visualize and collaborate on your experiments
 			</span>
 			<div
-				class="flex flex-col gap-5 md:flex-row mdb:flex-col lg:flex-row md:text-xl xl:px-16"
+				class="flex flex-col justify-center gap-5 sm:flex-row md:text-xl xl:px-16"
 			>
 				<Button
-					class="bg-pinky text-white px-4 py-2 rounded-md"
+					class="bg-pinky border-pinky text-white px-4 py-2 rounded-md enabled:hover:bg-rose-700 enabled:hover:border-rose-700 focus:shadow-none enabled:active:bg-rose-700 enabled:active:border-rose-700"
 					label="Sign up for free"
 				/>
 				<Button
-					class="border-2 border-gray-400 text-gray-600 px-4 py-2 rounded-md"
+					class="border-2 border-gray-400 text-gray-600 px-4 py-2 rounded-md enabled:hover:bg-gray-600 enabled:hover:border-gray-600 focus:shadow-none enabled:active:bg-gray-600 enabled:active:border-gray-600"
 					label="Contact Sales"
 					size="small"
 				/>

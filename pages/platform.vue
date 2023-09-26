@@ -15,7 +15,7 @@
 		</div>
 		<img
 			class="w-[90%] xs:w-[75%] sm:w-[45%] md:w-[30%] lg:w-[25%]"
-			src="@/assets/images/ExperimentDetailsImageComparison.png"
+			src="@/assets/images/3 PINK-Visual data-bro-PINK.png"
 			alt="Experiment details Image comparison"
 		/>
 	</section>
@@ -84,116 +84,59 @@
 			<p
 				class="flex gap-2 items-center text-xs lg:text-sm font-medium text-blue-800"
 			>
-				View all integrations <ArrowLongRightIcon class="h-4 w-4 mt-1" />
+				View all integrations: COMING SOON
 			</p>
 		</div>
 	</section>
 
 	<div class="self-center w-full mlg:w-[80%] mxl:w-[68%] p-4">
 		<Accordion :multiple="true" :activeIndex="[0]">
-			<AccordionTab
-				headerClass="gap-5 bg-gray-200 border border-white rounded-t-lg p-4"
-				contentClass="bg-gray-50 p-4"
-				header="What problem does CROBATA solve?"
-			>
-				<p class="">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in
-					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum.
+			<AccordionTab header="What problem does CROBATA solve?">
+				<p>
+					CROBATA allows you to store, document, organise and share all the
+					knowledge gained from previous experiments. Never be worried again by
+					designs not respecting previous winning hypotheses.
 				</p>
 			</AccordionTab>
 			<AccordionTab
-				headerClass="bg-gray-200 border border-white p-4"
-				contentClass="bg-gray-50 p-4"
 				header="Is CROBATA suitable for both beginners and experts in A/B testing?"
 			>
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-					ab illo inventore veritatis et quasi architecto beatae vitae dicta
-					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-					qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit,
-					sed quia non numquam eius modi.
+					Absolutely! CROBATA's intuitive interface caters to users of all
+					levels. Crobata is created so beginners can quickly start getting
+					knowledge without the noise of complex statistics, while experts will
+					appreciate the ease of communicating and spreading data driving
+					decisions without the need of presentations and political challenges.
 				</p>
 			</AccordionTab>
-			<AccordionTab
-				headerClass="bg-gray-200 border border-white p-4"
-				contentClass="bg-gray-50 p-4"
-				header="Can multiple team members collaborate on CROBATA?"
-			>
+			<AccordionTab header="Can multiple team members collaborate on CROBATA?">
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-					ab illo inventore veritatis et quasi architecto beatae vitae dicta
-					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-					qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit,
-					sed quia non numquam eius modi.
+					Yes, collaboration is at the heart of CROBATA. Multiple team members
+					can work together in real-time, making it easy to share insights and
+					collectively optimise user experiences.
 				</p>
 			</AccordionTab>
-			<AccordionTab
-				headerClass="bg-gray-200 border border-white p-4"
-				contentClass="bg-gray-50 p-4"
-				header="Why use CROBATA instead of my classic spreadsheets?"
-			>
+
+			<AccordionTab header="How does CROBATA integrate with A/B testing tools?">
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-					ab illo inventore veritatis et quasi architecto beatae vitae dicta
-					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-					qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit,
-					sed quia non numquam eius modi.
+					CROBATA's team is working tirelessly to integrate with popular A/B
+					testing tools, such as Optimizely, AB Tasty and VWO, with the goal of
+					ensuring that your experiments' data flows directly into our platform
+					for visualisation and analysis.
 				</p>
 			</AccordionTab>
-			<AccordionTab
-				headerClass="bg-gray-200 border border-white p-4"
-				contentClass="bg-gray-50 p-4"
-				header="How does CROBATA integrate with A/B testing tools?"
-			>
+			<AccordionTab header="How do I start using CROBATA?">
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-					ab illo inventore veritatis et quasi architecto beatae vitae dicta
-					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-					qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit,
-					sed quia non numquam eius modi.
+					Getting started is easy. Sign up for a free trial, and you'll have
+					access to all our platform's features. Our user-friendly interface
+					means you'll be up and running in no time.
 				</p>
 			</AccordionTab>
-			<AccordionTab
-				headerClass="bg-gray-200 border border-white p-4"
-				contentClass="bg-gray-50 p-4"
-				header="How do I start using CROBATA?"
-			>
+			<AccordionTab header="Is my data secure on CROBATA?">
 				<p>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-					ab illo inventore veritatis et quasi architecto beatae vitae dicta
-					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-					aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-					qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit,
-					sed quia non numquam eius modi.
-				</p>
-			</AccordionTab>
-			<AccordionTab
-				headerClass="bg-gray-200 border border-white rounded-b-lg p-4"
-				contentClass="bg-gray-50 p-4"
-				header="What is the price?"
-			>
-				<p>
-					At vero eos et accusamus et iusto odio dignissimos ducimus qui
-					blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-					et quas molestias excepturi sint occaecati cupiditate non provident,
-					similique sunt in culpa qui officia deserunt mollitia animi, id est
-					laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-					distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-					cumque nihil impedit quo minus.
+					Yes, we take data security seriously. Your data is encrypted and
+					protected with the latest security measures. We adhere to strict
+					privacy standards to ensure your information remains safe.
 				</p>
 			</AccordionTab>
 		</Accordion>
@@ -218,13 +161,12 @@
 					class="flex flex-col xs:flex-row md:flex-col gap-3 mdb:flex-col xl:px-16"
 				>
 					<Button
-						class="bg-bluey text-white px-4 py-2 rounded-md xl:text-xl whitespace-nowrap"
+						class="bg-bluey text-white px-4 py-2 rounded-md xl:text-xl whitespace-nowrap enabled:hover:bg-blue-800 enabled:hover:border-blue-800 focus:shadow-none enabled:active:bg-blue-800 enabled:active:border-blue-800"
 						label="Sign up for free"
 					/>
 					<Button
-						class="border-2 bg-white/30 border-gray-400 text-gray-600 px-4 py-2 rounded-md xl:text-xl whitespace-nowrap"
+						class="border-2 bg-white/30 border-gray-400 text-gray-600 px-4 py-2 rounded-md xl:text-xl whitespace-nowrap enabled:hover:bg-gray-600 enabled:hover:border-gray-600 focus:shadow-none enabled:active:bg-gray-600 enabled:active:border-gray-600"
 						label="Contact Sales"
-						size="small"
 					/>
 				</div>
 			</div>
@@ -233,8 +175,6 @@
 </template>
 
 <script setup>
-import Accordion from "primevue/accordion";
-import AccordionTab from "primevue/accordiontab";
 import { ArrowLongRightIcon } from "@heroicons/vue/24/outline";
 definePageMeta({
 	layout: "default",

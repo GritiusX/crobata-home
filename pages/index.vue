@@ -23,7 +23,7 @@
 	>
 		<img
 			class="w-[90%] xs:w-[75%] sm:w-[45%] lg:w-[35%] mxl:w-[24%] 2xl:w-[25%] rounded-lg"
-			src="@/assets/images/dataDriven.png"
+			src="../assets/images/5 PINK Data analysis-amico.png"
 			alt="Data driven isometric illustration by Storyset in Freepik"
 		/>
 		<div
@@ -34,9 +34,9 @@
 				for tomorrow.
 			</h2>
 			<p
-				class="flex gap-2 items-center justify-center sm:justify-start text-sm lg:text-base text-blue-800"
+				class="flex gap-2 items-center justify-center sm:justify-start text-sm lg:text-base text-pink-600"
 			>
-				Know how to use Crobata <ArrowLongRightIcon class="h-4 w-4 mt-1" />
+				Know how to use Crobata: COMING SOON
 			</p>
 		</div>
 	</section>
@@ -48,7 +48,7 @@
 		>
 			<img
 				class="w-[90%] xs:w-[75%] lg:w-[45%] rounded-lg"
-				src="@/assets/images/computerImage.png"
+				src="../assets/images/computerImage.png"
 				alt="Data driven isometric illustration by Storyset in Freepik"
 			/>
 		</div>
@@ -68,7 +68,6 @@
 			</p>
 		</div>
 	</section>
-
 	<section
 		class="flex flex-col w-full gap-10 px-2 justify-around items-center py-20 sm:px-6 xl:px-16 2xl:px-32 sm:flex-row"
 	>
@@ -80,14 +79,16 @@
 				Connect your experimentation platform and let the Crobata do the work.
 				Share access and allow your company to feed from your knowledge
 			</p>
-			<p class="flex gap-2 items-center text-xs lg:text-sm text-blue-800">
-				View all integrations <ArrowLongRightIcon class="h-4 w-4 mt-1" />
+			<p
+				class="flex gap-2 items-center justify-center sm:justify-start text-sm lg:text-base text-pink-600"
+			>
+				View all integrations: COMING SOON
 			</p>
 		</div>
 		<img
 			class="w-[90%] xs:w-[75%] sm:w-[45%] lg:w-[35%] mxl:w-[24%] 2xl:w-[25%] rounded-lg"
-			src="@/assets/images/dataImage.png"
-			alt=""
+			src="@/assets/images/6 PINK Sentiment analysis-amico.png"
+			alt="Data driven isometric illustration by Storyset in Freepik"
 		/>
 	</section>
 	<section

@@ -1,10 +1,14 @@
 <template>
 	<section
-		class="flex flex-col mlg:flex-row w-full gap-4 justify-center items-center py-6 mlg:px-6 bg-blue-200"
+		class="flex flex-col sm:flex-row gap-4 sm:items-center sm:justify-center w-full px-2 py-8 mxl:py-16 bg-gray-100"
 	>
-		<h2 class="text-2xl mlg:w-[20%] text-end">Integrated with:</h2>
+		<h2
+			class="text-2xl w-full sm:w-[45%] 2xl:w-[35%] font-medium text-center sm:text-start"
+		>
+			Integrated with:
+		</h2>
 		<div
-			class="grid grid-cols-2 gap-2 mt-4 sm:mt-0 w-full mlg:w-[80%] mlg:flex mlg:flex-row mlg:justify-evenly place-items-center"
+			class="grid grid-cols-2 gap-2 mt-4 sm:mt-0 w-full sm:w-[45%] mlg:flex mlg:flex-row mlg:justify-evenly place-items-center"
 		>
 			<img
 				class="h-[90px] w-[90px]"
@@ -31,5 +35,3 @@
 </template>
 
 <script setup></script>
-
-<style lang="scss" scoped></style>

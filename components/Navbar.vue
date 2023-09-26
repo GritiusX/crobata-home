@@ -9,13 +9,15 @@
 			>
 				<div class="flex items-center">
 					<img
-						class="w-36 cursor-pointer"
-						src="@/assets/images/logo_transparent.png"
+						class="w-[150px] cursor-pointer"
+						src="@/assets/images/svg/Crobata-logo.svg"
 						alt="Crobata logo home button"
 					/>
 				</div>
 			</NuxtLink>
-			<div class="hidden lg:flex flex-row w-full justify-between gap-4 mt-1">
+			<div
+				class="hidden lg:flex flex-row w-full justify-between gap-4 mt-1 items-center"
+			>
 				<div class="flex flex-row items-center gap-5">
 					<nuxt-link
 						to="/platform"
@@ -23,29 +25,36 @@
 					>
 						Platform <ChevronRightIcon class="w-3 h-3 mt-1" />
 					</nuxt-link>
-					<span class="flex gap-2 items-center hover:text-bluey"
-						>Solutions <ChevronRightIcon class="w-3 h-3 mt-1"
-					/></span>
+					<nuxt-link
+						to="/solutions"
+						class="flex gap-2 items-center hover:text-bluey"
+					>
+						Solutions <ChevronRightIcon class="w-3 h-3 mt-1" />
+					</nuxt-link>
 					<span class="flex gap-2 items-center hover:text-pinky"
 						>Book a demo <ChevronRightIcon class="w-3 h-3 mt-1"
 					/></span>
-					<span class="flex gap-2 items-center hover:text-bluey"
-						>Pricing <ChevronRightIcon class="w-3 h-3 mt-1"
-					/></span>
+					<nuxt-link
+						to="/pricing"
+						class="flex gap-2 items-center hover:text-bluey"
+					>
+						Pricing <ChevronRightIcon class="w-3 h-3 mt-1" />
+					</nuxt-link>
 				</div>
 				<div class="flex items-center gap-4">
+					<!-- border-2 border-gray-600 text-gray-800 px-4 py-2 rounded-full text-sm bg-transparent  -->
 					<Button
-						class="border-2 border-gray-200 text-gray-600 px-4 py-2 lg:py-2 lg:px-1 mlg:px-4 mlg:py-2 rounded-md"
+						class="border-2 border-gray-300 text-gray-600 px-4 py-2 rounded-md enabled:hover:bg-gray-600 enabled:hover:border-gray-600 focus:shadow-none enabled:active:bg-gray-600 enabled:active:border-gray-600"
 						label="Contact Sales"
 						size="small"
 					/>
 					<Button
-						class="bg-pinky text-white px-4 py-2 lg:py-2 lg:px-1 mlg:px-4 mlg:py-2 rounded-md"
+						class="bg-pinky border-pinky text-white px-4 py-2 rounded-md enabled:hover:bg-rose-700 enabled:hover:border-rose-700 focus:shadow-none enabled:active:bg-rose-700 enabled:active:border-rose-700"
 						label="Sign up for free"
 						size="small"
 					/>
 					<Button
-						class="bg-bluey text-white px-4 py-2 lg:py-2 lg:px-1 mlg:px-4 mlg:py-2 rounded-md"
+						class="bg-bluey text-white px-4 py-2 rounded-md enabled:hover:bg-blue-800 enabled:hover:border-blue-800 focus:shadow-none enabled:active:bg-blue-800 enabled:active:border-blue-800"
 						label="Sign in"
 						size="small"
 					/>
