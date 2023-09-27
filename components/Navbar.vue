@@ -31,9 +31,13 @@
 					>
 						Solutions <ChevronRightIcon class="w-3 h-3 mt-1" />
 					</nuxt-link>
-					<span class="flex gap-2 items-center hover:text-pinky"
+					<a
+						href="https://calendly.com/guidopawluk-kj0/crobata-book-a-demo-schedule"
+						class="flex gap-2 items-center hover:text-pinky cursor-pointer"
+						target="_blank"
+						rel="noopener noreferrer"
 						>Book a demo <ChevronRightIcon class="w-3 h-3 mt-1"
-					/></span>
+					/></a>
 					<nuxt-link
 						to="/pricing"
 						class="flex gap-2 items-center hover:text-bluey"

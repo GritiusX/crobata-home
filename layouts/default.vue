@@ -1,9 +1,9 @@
 <template>
 	<Navbar />
-	<main class="w-full flex flex-col">
+	<main class="w-full flex flex-col items-center">
 		<slot />
+		<Footer />
 	</main>
-	<Footer />
 </template>
 
 <script setup></script>
