@@ -19,7 +19,7 @@
 		</div>
 		<img
 			class="w-[90%] xs:w-[75%] sm:w-[45%] lg:w-[35%] mxl:w-[24%] 2xl:w-[25%] rounded-lg"
-			src="@/assets/images/7 PINK Analytics-amico.png"
+			src="@/assets/images/7-PINK-Analytics-amico.png"
 			alt="Visual data illustration by Jeremiah Shaw"
 		/>
 	</section>

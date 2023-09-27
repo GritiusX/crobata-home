@@ -27,7 +27,7 @@
 
 		<img
 			class="w-[90%] xs:w-[75%] sm:w-[45%] lg:w-[35%] 2xl:w-[30%] rounded-lg"
-			src="@/assets/images/6 BLUE Company-amico.png"
+			src="@/assets/images/6-BLUE-Company-amico.png"
 			alt="Visual data illustration by Jeremiah Shaw"
 		/>
 	</section>

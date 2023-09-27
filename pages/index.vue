@@ -23,7 +23,7 @@
 	>
 		<img
 			class="w-[90%] xs:w-[75%] sm:w-[45%] lg:w-[35%] mxl:w-[24%] 2xl:w-[25%] rounded-lg"
-			src="../assets/images/5 PINK Data analysis-amico.png"
+			src="@/assets/images/5-PINK-Data-analysis-amico.png"
 			alt="Data driven isometric illustration by Storyset in Freepik"
 		/>
 		<div
@@ -87,7 +87,7 @@
 		</div>
 		<img
 			class="w-[90%] xs:w-[75%] sm:w-[45%] lg:w-[35%] mxl:w-[24%] 2xl:w-[25%] rounded-lg"
-			src="@/assets/images/6 PINK Sentiment analysis-amico.png"
+			src="@/assets/images/6-PINK-Sentiment-analysis-amico.png"
 			alt="Data driven isometric illustration by Storyset in Freepik"
 		/>
 	</section>

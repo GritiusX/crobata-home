@@ -25,7 +25,6 @@
 				<Button
 					class="border-2 border-gray-400 text-gray-600 px-4 py-2 rounded-md enabled:hover:bg-gray-600 enabled:hover:border-gray-600 focus:shadow-none enabled:active:bg-gray-600 enabled:active:border-gray-600"
 					label="Contact Sales"
-					size="small"
 				/>
 			</div>
 		</div>

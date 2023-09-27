@@ -15,7 +15,7 @@
 		</div>
 		<img
 			class="w-[90%] xs:w-[75%] sm:w-[45%] md:w-[30%] lg:w-[25%]"
-			src="@/assets/images/3 PINK-Visual data-bro-PINK.png"
+			src="@/assets/images/3-PINK-Visual-data-bro-PINK.png"
 			alt="Experiment details Image comparison"
 		/>
 	</section>
