@@ -5,6 +5,8 @@ import Card from "primevue/card";
 import Accordion from "primevue/accordion";
 import AccordionTab from "primevue/accordiontab";
 import Tag from "primevue/tag";
+import InputText from "primevue/inputtext";
+
 export default defineNuxtPlugin((nuxtApp) => {
 	nuxtApp.vueApp.use(PrimeVue, { ripple: true });
 	nuxtApp.vueApp.component("Button", Button);
@@ -12,4 +14,5 @@ export default defineNuxtPlugin((nuxtApp) => {
 	nuxtApp.vueApp.component("Accordion", Accordion);
 	nuxtApp.vueApp.component("AccordionTab", AccordionTab);
 	nuxtApp.vueApp.component("Tag", Tag);
+	nuxtApp.vueApp.component("InputText", InputText);
 });

@@ -130,10 +130,6 @@
 
 <script setup>
 import { ArrowLongRightIcon } from "@heroicons/vue/24/outline";
-
-definePageMeta({
-	layout: "default",
-});
 </script>
 
 <style lang="scss" scoped></style>

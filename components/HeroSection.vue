@@ -1,91 +1,53 @@
 <template>
-	<section
-		:class="`flex w-full h-[760px] md:h-[654px] ${
-			isLargeScreen ? 'backgroundImageLarge' : 'backgroundImageSmall'
-		}`"
-	>
-		<div
-			class="flex flex-col w-full gap-5 p-6 lg:p-8 xl:gap-7 mdb:w-[50%] md:items-center mdb:justify-center mdb:text-start mdb:items-start text-center font-semibold"
+	<XyzTransitionGroup class="hero xyz-in" :appear="true" xyz="fade">
+		<section
+			class="flex flex-col mdb:flex-row w-full gap-6 justify-center lg:justify-evenly items-center py-20"
+			key="mainSection"
 		>
-			<h1
-				class="text-5xl lg:text-7xl xl:pl-16 xl:w-[90%] leading-snug text-bluey"
-			>
-				Unlock the power of your A/B Tests
-			</h1>
-			<span class="font-medium w-full xl:px-16">
-				Streamline, visualize and collaborate on your experiments
-			</span>
 			<div
-				class="flex flex-col justify-center gap-5 sm:flex-row md:text-xl xl:px-16"
+				class="flex flex-col w-full lg:w-[50%] mxl:w-[40%] gap-5 p-6 xl:gap-7 md:items-center mdb:justify-center mdb:items-start text-center mdb:text-start font-semibold"
 			>
-				<Button
-					class="bg-pinky border-pinky text-white px-4 py-2 rounded-md enabled:hover:bg-rose-700 enabled:hover:border-rose-700 focus:shadow-none enabled:active:bg-rose-700 enabled:active:border-rose-700"
-					label="Sign up for free"
-				/>
-				<Button
-					class="border-2 border-gray-400 text-gray-600 px-4 py-2 rounded-md enabled:hover:bg-gray-600 enabled:hover:border-gray-600 focus:shadow-none enabled:active:bg-gray-600 enabled:active:border-gray-600"
-					label="Contact Sales"
-				/>
+				<h1
+					class="text-5xl lg:text-6xl 2xl:text-7xl leading-snug xyz-nested text-bluey"
+					xyz="fade up front delay-3"
+				>
+					Unlock the power of your A/B Tests
+				</h1>
+				<span class="font-medium w-full xyz-nested" xyz="fade up front delay-6">
+					Streamline, visualize and collaborate on your experiments
+				</span>
+				<div class="flex flex-col justify-center gap-5 sm:flex-row md:text-xl">
+					<nuxt-link
+						to="/signup"
+						xyz="fade up front delay-8"
+						class="flex px-4 py-2 rounded-md xyz-nested text-sm items-center text-white bg-bluey enabled:hover:bg-blue-800 enabled:hover:border-blue-800 focus:shadow-none enabled:active:bg-blue-800 enabled:active:border-blue-800"
+					>
+						Sign up for free
+					</nuxt-link>
+					<Button
+						class="border-2 px-4 py-2 rounded-md xyz-nested border-gray-300 text-gray-600 enabled:hover:bg-gray-600 enabled:hover:border-gray-600 focus:shadow-none enabled:active:bg-gray-600 enabled:active:border-gray-600"
+						label="Contact Sales"
+						xyz="fade up front delay-8"
+					/>
+				</div>
 			</div>
-		</div>
-	</section>
+
+			<img
+				class="w-[90%] xs:w-[75%] sm:w-[45%] lg:w-[35%] 2xl:w-[30%] rounded-lg mirrored-svg"
+				src="@/assets/images/svg/crobata-logo-svg.svg"
+				alt="Visual data illustration by Jeremiah Shaw"
+			/>
+		</section>
+	</XyzTransitionGroup>
 </template>
 
-<script setup>
-const { isLargeScreen } = useScreenSize(); //esto chequea el tamaño de la pagina, para que podamos usar un background o el otro sin hacer tanto codeo
-</script>
+<script setup></script>
 
-<style scoped>
-.backgroundImageLarge {
-	background-image: url("@/assets/images/backgroundLarge.webp");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+<style>
+.hero {
+	--xyz-duration-default: 2.5s;
 }
-.backgroundImageSmall {
-	background-image: url("@/assets/images/backgroundSmall.webp");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-@media screen and (min-width: 700px) {
-	.backgroundImageSmall {
-		background-position: center bottom -10px;
-	}
-}
-@media screen and (min-width: 768px) {
-	.backgroundImageSmall {
-		background-position: center bottom -100px;
-	}
-}
-@media screen and (min-width: 850px) {
-	.backgroundImageSmall {
-		background-position: center bottom -230px;
-	}
-}
-@media screen and (min-width: 900px) {
-	.backgroundImageLarge {
-		background-position: center left -300px;
-	}
-}
-@media screen and (min-width: 1200px) {
-	.backgroundImageLarge {
-		background-position: center left -280px;
-	}
-}
-@media screen and (min-width: 1300px) {
-	.backgroundImageLarge {
-		background-position: center left -180px;
-	}
-}
-@media screen and (min-width: 1500px) {
-	.backgroundImageLarge {
-		background-position: center left -100px;
-	}
-}
-@media screen and (min-width: 1800px) {
-	.backgroundImageLarge {
-		background-position: center;
-	}
+.mirrored-svg {
+	transform: scaleX(-1);
 }
 </style>
