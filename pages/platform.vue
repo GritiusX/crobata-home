@@ -160,10 +160,13 @@
 				<div
 					class="flex flex-col xs:flex-row md:flex-col gap-3 mdb:flex-col xl:px-16"
 				>
-					<Button
+					<nuxt-link
+						to="/signup"
+						xyz="fade up front delay-8"
 						class="bg-bluey text-white px-4 py-2 rounded-md xl:text-xl whitespace-nowrap enabled:hover:bg-blue-800 enabled:hover:border-blue-800 focus:shadow-none enabled:active:bg-blue-800 enabled:active:border-blue-800"
-						label="Sign up for free"
-					/>
+					>
+						Sign up for free
+					</nuxt-link>
 					<Button
 						class="border-2 bg-white/30 border-gray-400 text-gray-600 px-4 py-2 rounded-md xl:text-xl whitespace-nowrap enabled:hover:bg-gray-600 enabled:hover:border-gray-600 focus:shadow-none enabled:active:bg-gray-600 enabled:active:border-gray-600"
 						label="Contact Sales"

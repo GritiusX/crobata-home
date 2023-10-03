@@ -6,17 +6,23 @@
 			<h1 class="text-4xl text-center sm:text-start">Create an account</h1>
 
 			<Form
-				@submit="onSubmit()"
+				@submit="onSubmit"
 				:validation-schema="schema"
 				class="flex flex-col xs:h-fit w-full gap-4"
+				v-slot="{ errors }"
 			>
 				<div class="flex flex-col sm:flex-row w-full gap-4">
 					<div class="flex flex-col w-full gap-2">
 						<Field
 							name="first_name"
 							type="text"
-							placeholder="First name"
 							class="px-3 py-2 rounded-md bg-gray-200 placeholder:text-sm placeholder:font-light placeholder:text-black w-full"
+							:class="{
+								'bg-red-100 border border-red-400 outline-red-600':
+									errors.first_name,
+							}"
+							label="First Name"
+							placeholder="First Name"
 						/>
 						<ErrorMessage class="text-sm text-red-400" name="first_name" />
 					</div>
@@ -24,8 +30,12 @@
 						<Field
 							name="last_name"
 							type="text"
-							placeholder="Last name"
 							class="px-3 py-2 rounded-md bg-gray-200 placeholder:text-sm placeholder:font-light placeholder:text-black w-full"
+							:class="{
+								'bg-red-100 border border-red-400 outline-red-600':
+									errors.last_name,
+							}"
+							placeholder="Last name"
 						/>
 						<ErrorMessage class="text-sm text-red-400" name="last_name" />
 					</div>
@@ -34,8 +44,12 @@
 					<Field
 						name="organization"
 						type="text"
-						placeholder="Organization"
 						class="px-3 py-2 rounded-md bg-gray-200 placeholder:text-sm placeholder:font-light placeholder:text-black w-full"
+						:class="{
+							'bg-red-100 border border-red-400 outline-red-600':
+								errors.organization,
+						}"
+						placeholder="Organization"
 					/>
 					<ErrorMessage class="text-sm text-red-400" name="organization" />
 				</div>
@@ -43,8 +57,11 @@
 					<Field
 						name="email"
 						type="email"
-						placeholder="test@email.com"
 						class="px-3 py-2 rounded-md bg-gray-200 placeholder:text-sm placeholder:font-light placeholder:text-black w-full"
+						:class="{
+							'bg-red-100 border border-red-400 outline-red-600': errors.email,
+						}"
+						placeholder="test@email.com"
 					/>
 					<ErrorMessage class="text-sm text-red-400" name="email" />
 				</div>
@@ -52,12 +69,17 @@
 					<Field
 						name="password"
 						type="password"
-						placeholder="Password"
 						class="px-3 py-2 rounded-md bg-gray-200 placeholder:text-sm placeholder:font-light placeholder:text-black w-full"
+						:class="{
+							'bg-red-100 border border-red-400 outline-red-600':
+								errors.password,
+						}"
+						placeholder="Password"
 					/>
 					<ErrorMessage class="text-sm text-red-400" name="password" />
 				</div>
 				<Button
+					type="submit"
 					class="w-full sm:w-[150px] justify-center bg-black border-black focus:shadow-none"
 					>Sign up</Button
 				>
@@ -94,24 +116,27 @@
 
 <script setup>
 import { Form, Field, ErrorMessage } from "vee-validate";
-
 import * as yup from "yup";
 definePageMeta({
 	layout: "signup",
 });
 
 const schema = yup.object({
-	first_name: yup.string().trim().required("First name is a required field"),
-	last_name: yup.string().trim().required("Last name is a required field"),
-	organization: yup
+	first_name: yup.string().required("First name is a required field"),
+	last_name: yup.string().required("Last name is a required field"),
+	organization: yup.string().required("Organization is a required field"),
+	email: yup
 		.string()
-		.trim()
-		.required("Organization is a required field"),
-	email: yup.string().trim().required("Email is a required field").email(),
-	password: yup.string().trim().required("Password is a required field").min(8),
+		.email("Email must be valid")
+		.required("Email is a required field"),
+	password: yup
+		.string()
+		.required("Password is a required field")
+		.min(8, "Password must be at least 8 characters long"),
 });
 
-const onSubmit = () => {
-	/* no hago nada */
+const onSubmit = (values, { resetForm }) => {
+	console.log(JSON.stringify(values, null, 2));
+	resetForm();
 };
 </script>

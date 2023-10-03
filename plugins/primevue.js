@@ -6,6 +6,7 @@ import Accordion from "primevue/accordion";
 import AccordionTab from "primevue/accordiontab";
 import Tag from "primevue/tag";
 import InputText from "primevue/inputtext";
+import Toast from "primevue/toast";
 
 export default defineNuxtPlugin((nuxtApp) => {
 	nuxtApp.vueApp.use(PrimeVue, { ripple: true });
@@ -15,4 +16,5 @@ export default defineNuxtPlugin((nuxtApp) => {
 	nuxtApp.vueApp.component("AccordionTab", AccordionTab);
 	nuxtApp.vueApp.component("Tag", Tag);
 	nuxtApp.vueApp.component("InputText", InputText);
+	nuxtApp.vueApp.component("Toast", Toast);
 });

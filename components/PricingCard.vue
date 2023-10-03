@@ -27,7 +27,10 @@
 				</p>
 			</div>
 		</div>
-		<Button :class="formatButton" :label="buttonText" size="small" />
+		<nuxt-link to="/signup" xyz="fade up front delay-8" :class="formatButton">
+			{{ buttonText }}
+		</nuxt-link>
+
 		<div class="mt-4">
 			<p class="mb-2 font-semibold">Tier includes:</p>
 			<ul class="text-xs flex flex-col items-start gap-2">
@@ -85,11 +88,11 @@ const formatPrice = computed(() => {
 });
 const formatButton = computed(() => {
 	if (buttonType === 1) {
-		return "border-2 border-gray-600 text-gray-800 px-4 py-2 rounded-full text-sm bg-transparent enabled:hover:bg-gray-600 enabled:hover:border-gray-600 focus:shadow-none enabled:active:bg-gray-600 enabled:active:border-gray-600";
+		return "border-2 border-gray-600 text-gray-800 px-4 py-3 rounded-full text-sm bg-transparent enabled:hover:bg-gray-600 enabled:hover:border-gray-600 focus:shadow-none enabled:active:bg-gray-600 enabled:active:border-gray-600";
 	}
 	if (buttonType === 2) {
-		return "bg-pinky border-pinky text-white rounded-full enabled:hover:bg-rose-700 enabled:hover:border-rose-700 focus:shadow-none enabled:active:bg-rose-700 enabled:active:border-rose-700";
+		return "bg-pinky border-pinky px-4 py-3 text-white rounded-full enabled:hover:bg-rose-700 enabled:hover:border-rose-700 focus:shadow-none enabled:active:bg-rose-700 enabled:active:border-rose-700";
 	}
-	return "bg-bluey text-white px-4 py-2 rounded-full text-sm focus:shadow-none enabled:hover:bg-blue-800";
+	return "bg-bluey text-white px-4 py-3 rounded-full text-sm focus:shadow-none enabled:hover:bg-blue-800";
 });
 </script>
