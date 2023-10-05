@@ -20,7 +20,7 @@
 					<nuxt-link
 						to="/signup"
 						xyz="fade up front delay-8"
-						class="flex px-4 py-2 rounded-md xyz-nested text-sm items-center text-white bg-bluey enabled:hover:bg-blue-800 enabled:hover:border-blue-800 focus:shadow-none enabled:active:bg-blue-800 enabled:active:border-blue-800"
+						class="flex px-4 py-2 rounded-md xyz-nested text-sm items-center text-white bg-bluey hover:bg-blue-800 hover:border-blue-800 focus:shadow-none active:bg-blue-800 active:border-blue-800"
 					>
 						Sign up for free
 					</nuxt-link>
