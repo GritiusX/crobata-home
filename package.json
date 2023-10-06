@@ -16,6 +16,7 @@
 	"dependencies": {
 		"@animxyz/vue3": "^0.6.7",
 		"@heroicons/vue": "^2.0.18",
+		"@supabase/supabase-js": "^2.38.0",
 		"@vee-validate/nuxt": "^4.11.7",
 		"@vee-validate/yup": "^4.11.7",
 		"primevue": "^3.34.1"
