@@ -106,7 +106,6 @@
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as yup from "yup";
 import { supabase } from "~/plugins/supabase";
-
 definePageMeta({
 	layout: "signup",
 });
@@ -132,96 +131,10 @@ const onSubmit = async (values) => {
 	await supabase.auth.signInWithOtp({
 		email: email,
 		options: {
-			emailRedirectTo: "https://crobata.vercel.app/",
+			emailRedirectTo: "https://crobata.vercel.app/?isRegistering=true",
 		},
 	});
 
 	actualPage.value = 2;
 };
-/* 
-const handleAuth = async () => {
-	isLoading.value = true;
-
-	if (isRegistering.value) {
-		const registerStatus = await userStore.registerUser(
-			registerEmail.value,
-			registerPassword.value,
-			fullName.value,
-			organization.value
-		);
-
-		if (!registerStatus.success) {
-			toast.error(registerStatus.message, { rtl: true });
-			isLoading.value = false;
-		} else {
-			toast.success("Successfully registered. Logging you in...", {
-				rtl: true,
-			});
-			isLoading.value = false;
-
-			try {
-				// Attempt to sign the user in after successful registration
-				await userStore.signIn(registerEmail.value, registerPassword.value);
-				toast.success("Successfully logged in. Redirecting...", { rtl: true });
-				navigateTo("/app/settings");
-				isLoading.value = false;
-			} catch (error) {
-				toast.error("Login failed after registration: " + error.message, {
-					rtl: true,
-				});
-				isLoading.value = false;
-
-				// Handle or navigate to a recovery state, as login failed immediately after registration
-			}
-		}
-	}
-
-	if (!isValidLoginEmail.value) {
-		toast.error("Invalid email address.", { rtl: true });
-		isLoading.value = false;
-
-		return;
-	}
-
-	if (!isValidLoginPassword.value) {
-		toast.error("Password must be at least 8 characters long.", { rtl: true });
-		isLoading.value = false;
-
-		return;
-	}
-
-	// If not register, then SIG IN
-	try {
-		let toastId = null;
-		let toastIdSuccess = null;
-
-		toastId = toast.info("Initiating Experiment Hub", {
-			duration: 300,
-			rtl: true,
-		});
-
-		await userStore.signIn(loginEmail.value, loginPassword.value);
-
-		toast.dismiss(toastId);
-		toastIdSuccess = toast.success("Successfully signed in.", {
-			duration: 500,
-			rtl: true,
-		});
-		await new Promise((resolve) => setTimeout(resolve, 200));
-		isLoading.value = false;
-
-		if (toastIdSuccess !== null) {
-			toast.dismiss(toastId, { rtl: true });
-		}
-		navigateTo("/app/experimentsMain");
-	} catch (err) {
-		isLoading.value = false;
-
-		console.error("Login failed:", err);
-		toast.error(`Login failed: ${err.message || "An unknown error occurred"}`, {
-			rtl: true,
-		});
-	}
-	isLoading.value = false;
-}; */
 </script>
