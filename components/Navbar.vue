@@ -1,7 +1,7 @@
 <template>
 	<header>
 		<nav
-			class="flex flex-row justify-between border-b items-center w-full h-20 py-4 px-8 xl:py-2 xl:px-4 gap-9 font-semibold bg-white"
+			class="flex flex-row justify-between border-b items-center w-full h-20 py-4 px-8 xl:py-2 xl:px-4 gap-9 font-semibold z-100 bg-white"
 		>
 			<NuxtLink
 				to="/"
@@ -70,28 +70,38 @@
 				<Bars3Icon v-else class="w-8 h-8" @click="toggleMenu" />
 			</div>
 		</nav>
-		<div v-if="wasClicked" class="relative flex justify-end items-start">
+		<div v-if="wasClicked" class="relative flex justify-end items-start z-50">
 			<div
 				v-if="wasClicked"
-				class="absolute flex flex-col gap-4 w-full px-6 pb-2 h-[calc(100vh - 70px)] bg-white font-semibold text-xl"
+				class="absolute flex flex-col gap-8 w-full px-6 pb-2 h-[calc(100vh - 70px)] bg-white font-semibold text-xl"
 			>
 				<span class="w-full border-t" />
-				<div class="flex justify-between items-center">
-					<p class="w-full py-2">Platform</p>
-					<ChevronRightIcon class="w-6 h-6" />
-				</div>
-				<div class="flex justify-between items-center">
-					<p class="w-full py-2">Solutions</p>
-					<ChevronRightIcon class="w-6 h-6" />
-				</div>
-				<div class="flex justify-between items-center">
-					<p class="w-full py-2">Book a demo</p>
-					<ChevronRightIcon class="w-6 h-6" />
-				</div>
-				<div class="flex justify-between items-center">
-					<p class="w-full py-2">Pricing</p>
-					<ChevronRightIcon class="w-6 h-6" />
-				</div>
+				<nuxt-link
+					to="/platform"
+					class="flex justify-between items-center hover:text-pinky active:text-pinky"
+				>
+					Platform <ChevronRightIcon class="w-6 h-6" />
+				</nuxt-link>
+				<nuxt-link
+					to="/solutions"
+					class="flex justify-between items-center hover:text-bluey active:text-bluey"
+				>
+					Solutions <ChevronRightIcon class="w-6 h-6" />
+				</nuxt-link>
+				<a
+					href="https://calendly.com/guidopawluk-kj0/crobata-book-a-demo-schedule"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex justify-between items-center hover:text-pinky active:text-pinky"
+				>
+					Book a Demo <ChevronRightIcon class="w-6 h-6" />
+				</a>
+				<nuxt-link
+					to="/pricing"
+					class="flex justify-between items-center hover:text-pinky active:text-pinky"
+				>
+					Pricing <ChevronRightIcon class="w-6 h-6" />
+				</nuxt-link>
 			</div>
 		</div>
 	</header>
